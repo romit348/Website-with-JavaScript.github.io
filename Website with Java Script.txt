@@ -1,0 +1,82 @@
+<html>
+<head><title> JAVA SCRIPT </title></head>
+<body bgcolor= "#C9F1EE">
+<p><h2 style="text-align:center"> Assignment 3  </h2></p>
+<p><h3 style="text-align:center"> Onclick Event </p><h3>
+
+<script> 
+function hello() {
+alert('Done!');
+}
+</script>
+</head>
+<body>
+<button type= "button" onclick="hello()"> Click Here</button>
+
+<p> <h3 style="text-align:center"> OnkeyUp Event </h3></p>
+
+<p> A Funtion is triggered when the user releases a key in the input field </p><br>
+ Enter your name: <input type="text" id="fname" onkeyup="myfuntion()">
+
+<script>
+funtion myfuntion(){
+var x = document.getElementById("fname");
+x.value = x.value.toUpperCase();
+}<br>
+</script>
+</body>
+
+<p><h3 style="text-align:center"> OnMouseOver Event </h3></p>
+
+ <script>
+   funtion hov() {
+   var e = document.getElementById('hover');
+       e.style.display = 'none';
+     }
+</script>
+</head>
+<body> 
+<div id="hover" onmouseover="hov()"
+style="background-color:green;height:300px;width:300px;">
+</div>
+</body>
+<br>
+
+
+<p><h3 style="text-align:center"> OnMouseOut Event </h3></p>
+
+<head> 
+<script>
+funtion out(){
+var e= document.getElementById('hover');
+e.style.display= 'none';
+}
+</script>
+</head>
+<body>
+<div id="onmouseout"="out()"
+style="background-color:black;height:300px;widht:300px;">
+</div>
+</body><br>
+
+
+<p><h3 style="text-align:center"> OnChange Event </h3></p>
+
+<body>
+<input onchange = "alert(this.value)" type = "number">
+</body>
+<br>
+
+<p><h3 style="text-align:center"> OnLoad Event </h3></p>
+
+
+
+
+
+
+
+
+
+
+</html>
+
